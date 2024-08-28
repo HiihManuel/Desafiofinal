@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet');
+
+:root{
+    /* fuetes del texto */
+    --fuente-primera: "Inter", sans-serif;
+
+    /* color del texto*/
+    --color-primero: #0A3871;
+    --color-segundario: #FFFFFF;
+    --color-tercero: #343A40;
+
+    /* tamaño del texto */
+    --font-size-primera: 2rem;
+    --font-size-segunda: 1rem;
+    --font-size-titulo: 1.5rem;
+    --font-size-pequeña: 0.75rem;
+
+
+    /* color de elemntos */
+    --color-elemento: #dde4fc;
+    --color-elemento_azul: #0A3871;
+    --color-elemento_azulos: #062a57;
+    --color-elemento_blanco: #ffffff;
+    
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+body{
+    background-color: var(--color-elemento);
+}
+.Contenido{
+    display:flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 80px;  
+
+}
+
+.Principal{
+    display: flex;
+    flex-direction: column;
+    padding: 4% 0% 0% 6%;
+    gap: 20px;
+}
+
+.Principal_ingreso_textarea{
+    font-family: var(--fuente-primera);
+    font-size: var(--font-size-primera);
+    color: var(--color-primero);
+    font-weight: 400;
+    text-align:start;
+    border: 1px solid #ccc;
+    width: 680px;
+    height: 355px;
+    padding: 10px;
+    background-color: var(--color-elemento);
+    border-color: var(--color-elemento_azul);
+    border-radius: 10px;
+    outline: none;
+    box-shadow: none;
+    resize: none;
+}
+
+.Principal_ingreso_textarea::placeholder{
+    font-family: var(--fuente-primera);
+    font-size: var(--font-size-primera);
+    color: var(--color-primero);
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+
+.Principal_listado{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 10px;
+}
+
+.Principal_listado_img{
+    height: 16px
+}
+
+.Pincipal_listado_texto{
+    display: flex;
+    gap: 8px;
+    color: var(--color-tercero);
+    font-size: var(--font-size-pequeña);
+    font-size: var(--fuente-primera);
+    font-weight: 400;
+}
+
+.Principal_listado_acciones{
+    width: 680px;
+    display: flex;
+    justify-content: center; 
+    gap: 24px;
+}
+
+.Principal_listado_boton{
+    font-family: var(--fuente-primera);
+    font-size: var(--font-size-segunda);
+    background: var(--color-elemento_azul);
+    color: var(--color-segundario);
+    font-weight: 400;
+    width: 328px;
+    padding: 24px 0;
+    border-radius: 30px;
+    box-shadow: none;
+    border: none;
+}
+
+.Principal_listado_boton:hover{
+    background-color: var(--color-elemento_azulos);
+}
+
+/* en esta parte se encuentra los estilos de la otra 
+section prinsipal (resultados): segunda parte______________________ */
+
+.Resultado{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-elemento_blanco);
+    width: 400px;
+    height: auto;
+    border-radius: 20px;
+    margin: 4% 0% 0% 0%;
+    align-items: center; 
+}
+
+/* width: 680px;
+height: 288px; */
+
+.Resultado{
+    display: flex;
+    gap: 16px;
+}
+
+.Resultado_contenido{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.Resultado_img{
+    width: 336px;
+}
+
+.Resultado_texto{
+    width: 336px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.Resultado_titulo{
+    font-size: var(--font-size-titulo);
+    color: var(--color-tercero);
+    font-family: var(--fuente-primera);
+    text-align: center;
+}
+
+.Resultado_p{
+    color: var(--color-tercero);
+    display: flex;
+    text-align: center;
+}
+
+.Resultado_boton{
+    font-family: var(--fuente-primera);
+    font-size: var(--font-size-segunda);
+    background: var(--color-elemento_azul);
+    color: var(--color-segundario);
+
+    width: 336px;
+    padding: 24px 0;
+    border-radius: 30px;
+    box-shadow: none;
+    border: none;
+}
+
+.Resultado_boton:hover{
+    background-color: var(--color-elemento_azulos);
+}
+
+/* pie de pag ________________________________________ */
+
+.footer{
+    background-color: var(--color-elemento_azul);
+    padding: var(--font-size-segunda);
+    color: var(--color-segundario);
+    text-align: center;
+    font-family: var(--fuente-primera);
+    font-size: var(--font-size-texto);
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+@media (max-width:1200px) {
+    
+}

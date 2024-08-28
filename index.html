@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Incritador</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+            rel="stylesheet">
+
+        <!-- estilos -->
+        <link rel="stylesheet" href="style/style.css"> 
+
+
+    </head>
+
+    <body>
+        <header></header>
+
+        <main class="Contenido">
+            <!-- estructure el pag en dos partes -->
+             
+            <!-- la primer section e ingresara la informacion y estaran los botenes con sus acciones -->
+            <!-- la segunda genera el resultado de la acción -->
+            <section class="Principal">
+
+                <section class="Principal_ingreso">
+
+                    <!-- para ingresar el texto ya sea para incriptar o desencriptar -->
+
+                    <textarea id="Textarea"class="Principal_ingreso_textarea" placeholder="Ingrese el texto aquí"></textarea>
+
+                </section>
+                
+                <!-- son las acciones que puede realizar -->
+                <section class="Principal_listado">
+
+                    <!-- se describe como debe ingresar el texto el "textarea" -->
+                    <section class="Pincipal_listado_texto">
+                        <img class="Principal_listado_img" src="assests/signo-de-exclamacion.png">
+                        <p>Solo letras minúsculas y sin acentos</p>
+                    </section>
+
+                    <div class="Principal_listado_acciones">
+    
+                        <button onclick="Encriptarclick()" class="Principal_listado_boton"> Encriptar</button>
+                        <button onclick="Desencriptarclick()" class="Principal_listado_boton">Desencriptar</button>
+    
+                    </div>
+
+                </section>
+
+            </section>
+
+            <section class="Resultado">
+                
+                <section class="Resultado_contenido">
+                    
+                    <img id="Eliminar_img" class="Resultado_img" src="assests/Imagen1.png" alt="Señora observado un objeto">
+
+                    <section class="Resultado_texto">
+                        <h1 id="Id_resultado_texto" class="Resultado_titulo"></h1>
+                        <p id="Id_resultado_p" class="Resultado_p"></p>
+                    </section>
+
+                </section>
+
+                <button onclick="Copiarclick()" class="Resultado_boton">Copiar</button>
+
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>Creado por Manuel Felipe Garzón</p>
+        </footer>   
+        <!-- js -->
+        <script src="actions/app.js" defer></script>
+    </body>
+</html>
